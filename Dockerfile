@@ -24,6 +24,7 @@ RUN rm /usr/share/nginx/html/*
 RUN git clone https://github.com/makky3939/suiko-fes.git
 
 # copy
+RUN mkdir /usr/share/nginx/html/suiko-fes
 RUN cp -r suiko-fes/* /usr/share/nginx/html/suiko-fes/
 
 # port open
